@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: ImYrS/aliyun-auto-signin@main
         with:
-          REFRESH_TOKENS: 1fce4a2284a04f48a9067ea6cece0760
-          GP_TOKEN: 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
+          REFRESH_TOKENS: ${{ secrets.REFRESH_TOKENS }}
+          GP_TOKEN: ${{ secrets.GP_TOKEN}}
           PUSH_TYPES: 'TELEGRAM'
-          TELEGRAM_BOT_TOKEN: 6036055864:AAHrJbijxeN5uwLvR5FXEQK9KtuQYZ3Ocac
-          TELEGRAM_CHAT_ID: 5003082910
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
